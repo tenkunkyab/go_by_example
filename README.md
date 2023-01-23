@@ -1,10 +1,13 @@
 Go Practice
 ===
 
-Resource: Go By Example [Url](https://gobyexample.com/)
----
 
-### Chapters
+Resource
+--- 
+Go By Example [Url](https://gobyexample.com/)
+Go.Dev [Url](https://go.dev/learn/)
+
+### Go By Example Chapters 
 - [x] Hello World
 - [x] Values
 - [x] Variables
