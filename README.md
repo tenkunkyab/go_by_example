@@ -6,6 +6,7 @@ Resource
 --- 
 Go By Example [Url](https://gobyexample.com/)
 Go.Dev [Url](https://go.dev/learn/)
+GoLangPrograms [Url](https://www.golangprograms.com/go-language.html)
 
 ### Go By Example Chapters 
 - [x] Hello World
@@ -16,7 +17,7 @@ Go.Dev [Url](https://go.dev/learn/)
 - [x] If/Else
 - [x] Switch
 - [x] Arrays
-- [ ] Slices
+- [x] Slices
 - [ ] Maps
 - [ ] Range
 - [ ] Functions

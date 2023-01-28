@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	// an array is a numbered sequence of elements of a specific length
-	// 'slices' are much more common
+	// an array is a *numbered* sequence of elements of a
+	// specific length 'slices' are much more common
 
 	var a [5]int
 	fmt.Println("emp: ", a)
@@ -26,4 +26,7 @@ func main() {
 	}
 
 	fmt.Println("2d: ", twoD)
+
+	p := [2]string{"a", "b"}
+	fmt.Println(p)
 }
