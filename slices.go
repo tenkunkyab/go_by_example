@@ -30,7 +30,37 @@ func main() {
 	fmt.Println(s, x)
 	// [a op c d] [a op c d e f]
 
-	// 2. copy'd -- we create an empty slice `c` of the same 
+	/**
+
+	https://go.dev/blog/slices-intro
+
+	slice can either be created
+	1. literal
+		letters := []string{"a", "b", "c"}
+	2. built-in function `make`
+		```
+		func make([]T, len, cap) [] T
+		````
+		T = element type of slice to be created
+		len = length
+		cap = optional capacity, if not provided defaults to `len`
+
+		when called `make` allocates an array and returns
+		a slice that refers to that array
+
+		```
+		var s []byte
+		s = make([]byte, 5, 5)
+		s == []byte{0, 0, 0, 0, 0}
+		```
+
+		the `length` and `capacity` of a slice can be inspected using
+		built-in `len` and `cap` function
+		len(s)
+		cap(s)
+	**/
+
+	// 2. copy'd -- we create an empty slice `c` of the same
 	// length as `s` and copy into `c` from `s`
 	c := make([]string, len(s))
 	copy(c, s) // copy by value
@@ -53,6 +83,16 @@ func main() {
 	// s from 2nd index till 5th index i.e. s[2], s[3], s[5]
 	// when len(s) is 4! where is it picking up `e`, and `f` from?
 
+	// answer:
+	// in the memory
+	// a, op, c, d, e, f
+	// we have three slices s, x, c
+	// s points to the location of `a`
+	// len(s) = 4 hence when we print s => a, op, c, d
+	// but cap(s) = 6 hence when we do s[2:6] => c, d, e, f
+	// x points to the location of `a`
+	// len(x) = 6 hence when we print x => a, op, c, d, e, f
+
 	l[1] = "poop"
 	fmt.Println(l)
 	// [c poop e]
@@ -63,14 +103,14 @@ func main() {
 	fmt.Println("dcl: ", t)
 
 	// slices can be composed into multi-dimensional data structures
-	// the length of inner slices can vary, unlike with 
+	// the length of inner slices can vary, unlike with
 	// multi-dimensional arrays
 	twoD := make([][]int, 3)
-	for i:=0; i<3; i++ {
-		innerLen := i+1
+	for i := 0; i < 3; i++ {
+		innerLen := i + 1
 		twoD[i] = make([]int, innerLen)
-		for j:=0; j<innerLen; j++ {
-			twoD[i][j] = i+j
+		for j := 0; j < innerLen; j++ {
+			twoD[i][j] = i + j
 		}
 	}
 	fmt.Println("2d: ", twoD)
