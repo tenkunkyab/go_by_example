@@ -28,19 +28,18 @@ func main() {
 	fmt.Println("map: ", m)
 	// map:  map[k1:7]
 
-	// optional second return value when getting a value 
+	// optional second return value when getting a value
 	// from a ap indicates if the `key` was present in the map
-	// this can be used to disamiguate between missing keys and 
+	// this can be used to disamiguate between missing keys and
 	// keys with zero values like `0` or `""`
 	_, prs := m["k2"]
 	fmt.Println("prs:", prs)
 	// prs: false
 
-
 	// we can also declare and initialize a new map in the same
 	// line with this syntax
-	n:= map[string]int{"foo": 1, "bar": 2}
+	n := map[string]int{"foo": 1, "bar": 2}
 	fmt.Println("map: ", n)
 	// map:  map[bar:2 foo:1]
-	
+
 }
