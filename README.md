@@ -21,7 +21,7 @@ GoLangPrograms [Url](https://www.golangprograms.com/go-language.html)
 - [x] Maps
 - [x] Range
 - [x] Functions
-- [ ] Multiple Return Values
+- [x] Multiple Return Values
 - [ ] Variadic Functions
 - [ ] Closures
 - [ ] Recursion
