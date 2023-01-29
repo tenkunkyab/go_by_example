@@ -22,7 +22,7 @@ GoLangPrograms [Url](https://www.golangprograms.com/go-language.html)
 - [x] Range
 - [x] Functions
 - [x] Multiple Return Values
-- [ ] Variadic Functions
+- [x] Variadic Functions
 - [ ] Closures
 - [ ] Recursion
 - [ ] Pointers
