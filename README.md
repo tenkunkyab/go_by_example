@@ -20,7 +20,7 @@ GoLangPrograms [Url](https://www.golangprograms.com/go-language.html)
 - [x] Slices
 - [x] Maps
 - [x] Range
-- [ ] Functions
+- [x] Functions
 - [ ] Multiple Return Values
 - [ ] Variadic Functions
 - [ ] Closures
