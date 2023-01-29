@@ -18,7 +18,7 @@ GoLangPrograms [Url](https://www.golangprograms.com/go-language.html)
 - [x] Switch
 - [x] Arrays
 - [x] Slices
-- [ ] Maps
+- [x] Maps
 - [ ] Range
 - [ ] Functions
 - [ ] Multiple Return Values
