@@ -23,10 +23,10 @@ GoLangPrograms [Url](https://www.golangprograms.com/go-language.html)
 - [x] Functions
 - [x] Multiple Return Values
 - [x] Variadic Functions
-- [ ] Closures
-- [ ] Recursion
-- [ ] Pointers
-- [ ] Strings and Runes
+- [x] Closures
+- [x] Recursion
+- [x] Pointers
+- [x] Strings and Runes
 - [ ] Structs
 - [ ] Methods
 - [ ] Interfaces
