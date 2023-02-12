@@ -27,8 +27,8 @@ GoLangPrograms [Url](https://www.golangprograms.com/go-language.html)
 - [x] Recursion
 - [x] Pointers
 - [x] Strings and Runes
-- [ ] Structs
-- [ ] Methods
+- [x] Structs
+- [x] Methods
 - [ ] Interfaces
 - [ ] Struct Embedding
 - [ ] Generics
